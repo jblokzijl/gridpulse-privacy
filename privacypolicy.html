@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GridPulse — Privacybeleid / Privacy Policy</title>
+  <style>
+    :root {
+      --green:   #00C853;
+      --bg:      #0a0a0f;
+      --card:    #14141c;
+      --border:  rgba(255,255,255,0.08);
+      --text:    #e8e8f0;
+      --muted:   #888899;
+      --radius:  14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ─────────────────────────────────── */
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .logo-icon {
+      width: 44px; height: 44px;
+      background: var(--bg);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+
+    .logo-name {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── Language switcher ───────────────────────── */
+    .lang-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 20px 24px 0;
+    }
+
+    .lang-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+
+    .lang-btn.active,
+    .lang-btn:hover {
+      border-color: var(--green);
+      color: var(--green);
+      background: rgba(0, 200, 83, 0.08);
+    }
+
+    /* ── Main content ────────────────────────────── */
+    main {
+      max-width: 740px;
+      margin: 32px auto 60px;
+      padding: 0 20px;
+    }
+
+    /* hide inactive language */
+    .lang-nl, .lang-en { display: none; }
+    body.show-nl .lang-nl { display: block; }
+    body.show-en .lang-en { display: block; }
+
+    /* ── Meta bar ────────────────────────────────── */
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .meta-chip {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .meta-chip span { color: var(--text); font-weight: 500; }
+
+    /* ── Section cards ───────────────────────────── */
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 24px 20px;
+      margin-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--green);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    section h2 .ico { font-style: normal; font-size: 16px; }
+
+    p { color: var(--text); margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* "not collected" list */
+    ul.none li::before { content: "✕"; color: #ff4444; }
+
+    strong { color: #fff; }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Highlight box ───────────────────────────── */
+    .highlight {
+      background: rgba(0, 200, 83, 0.07);
+      border: 1px solid rgba(0, 200, 83, 0.25);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-top: 12px;
+      font-size: 15px;
+    }
+
+    .highlight strong { color: var(--green); }
+
+    /* ── Contact ─────────────────────────────────── */
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 200, 83, 0.10);
+      border: 1px solid rgba(0, 200, 83, 0.30);
+      border-radius: 10px;
+      padding: 12px 18px;
+      color: var(--green);
+      font-weight: 500;
+      margin-top: 12px;
+    }
+
+    /* ── Footer ──────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 24px 20px 40px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Light-mode support ──────────────────────── */
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg:     #f2f2f7;
+        --card:   #ffffff;
+        --border: rgba(0,0,0,0.08);
+        --text:   #1c1c1e;
+        --muted:  #6c6c80;
+      }
+      .logo-icon { background: #e8e8f0; }
+    }
+
+    @media (max-width: 500px) {
+      section { padding: 18px 16px; }
+      main { padding: 0 12px; }
+    }
+  </style>
+</head>
+
+<body class="show-nl">
+
+<!-- ── Header ──────────────────────────────────────────────────────────── -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">⚡</div>
+    <span class="logo-name">GridPulse</span>
+  </div>
+  <h1 id="header-subtitle">Privacybeleid</h1>
+</header>
+
+<!-- ── Language switcher ────────────────────────────────────────────────── -->
+<div class="lang-bar">
+  <button class="lang-btn active" id="btn-nl" onclick="setLang('nl')">🇳🇱 Nederlands</button>
+  <button class="lang-btn"        id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!--  DUTCH                                                                -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<main>
+<div class="lang-nl">
+
+  <div class="meta">
+    <div class="meta-chip">Versie <span>1.0</span></div>
+    <div class="meta-chip">Bijgewerkt <span>25 maart 2025</span></div>
+    <div class="meta-chip">Van kracht per <span>25 maart 2025</span></div>
+  </div>
+
+  <section>
+    <h2><i class="ico">📋</i> Overzicht</h2>
+    <p>
+      GridPulse is een iOS-app die actuele dag-vooruit energieprijzen toont op basis
+      van gegevens van het <strong>ENTSO-E Transparency Platform</strong>.
+      Uw privacy staat bij ons centraal: GridPulse verzamelt, verwerkt of deelt
+      <strong>geen persoonlijke gegevens</strong>.
+    </p>
+    <div class="highlight">
+      <strong>Korte samenvatting:</strong> GridPulse slaat niets op over u als persoon.
+      Uw voorkeuren blijven op uw eigen apparaat. Er is geen account, geen tracking
+      en geen communicatie met derden buiten de ENTSO-E API.
+    </div>
+  </section>
+
+  <section>
+    <h2><i class="ico">🔒</i> Gegevens die wij NIET verzamelen</h2>
+    <p>GridPulse verzamelt de volgende gegevens <strong>niet</strong>:</p>
+    <ul class="none">
+      <li>Naam, e-mailadres of andere identificerende gegevens</li>
+      <li>Locatiegegevens (GPS of IP-locatie)</li>
+      <li>Apparaat-ID's, advertentie-ID's of vingerafdrukken</li>
+      <li>Gebruiksstatistieken, crashlogs of analytische gegevens</li>
+      <li>Financiële gegevens of betaalinformatie</li>
+      <li>Contacten, foto's of andere apparaatinhoud</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="ico">📱</i> Lokale opslag</h2>
+    <p>
+      GridPulse slaat een beperkt aantal <strong>gebruikersvoorkeuren</strong> uitsluitend
+      lokaal op uw apparaat op via <code>UserDefaults</code> (App Group gedeeld met de widget).
+      Deze gegevens verlaten uw apparaat nooit.
+    </p>
+    <ul>
+      <li>Geselecteerd land / ENTSO-E-zone</li>
+      <li>Weergave-instelling (€/kWh of €ct/kWh)</li>
+      <li>Totaalprijs-modus en leveranciersopslag</li>
+      <li>Drempelwaarde en voorkeur voor prijsnotificaties</li>
+      <li>Themavoorkeur (donker/licht)</li>
+      <li>Gecachede energieprijzen van de huidige dag</li>
+    </ul>
+    <p style="margin-top:12px">
+      Al deze gegevens kunt u te allen tijde verwijderen door de app te de-installeren.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🌐</i> Netwerkcommunicatie</h2>
+    <p>
+      GridPulse maakt uitsluitend verbinding met de <strong>ENTSO-E Transparency
+      Platform API</strong> (<code>web-api.tp.entsoe.eu</code>) om dag-vooruit
+      elektriciteitsprijzen op te halen.
+    </p>
+    <ul>
+      <li>Alleen energieprijsgegevens worden opgehaald — geen persoonlijke gegevens verstuurd</li>
+      <li>Het verzoek bevat uitsluitend een API-token en de gevraagde tijdsrange</li>
+      <li>Er worden geen cookies, sessie-ID's of tracking-headers meegestuurd</li>
+      <li>Er is geen communicatie met advertentie- of analysenetwerken</li>
+    </ul>
+    <p style="margin-top:12px">
+      Raadpleeg de <a href="https://transparency.entsoe.eu/content/static_content/Static%20content/terms%20and%20conditions/terms%20and%20conditions.html" target="_blank">
+      gebruiksvoorwaarden van ENTSO-E</a> voor informatie over hun databeleid.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🔔</i> Lokale notificaties</h2>
+    <p>
+      GridPulse kan lokale push-notificaties sturen wanneer de energieprijs onder uw
+      ingestelde drempelwaarde daalt. Deze notificaties worden <strong>volledig lokaal
+      op uw apparaat</strong> aangemaakt — er is geen externe server bij betrokken.
+      U kunt notificaties te allen tijde uitschakelen via de app-instellingen of de
+      iOS-systeeminstellingen.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🧩</i> Widgets</h2>
+    <p>
+      De WidgetKit-extensie deelt dezelfde lokale gegevensopslag (App Group) als de
+      hoofdapp. Er worden geen aanvullende gegevens verzameld of verstuurd.
+      De widget leest uitsluitend de gecachede prijzen en uw voorkeuren.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">👶</i> Kinderen</h2>
+    <p>
+      GridPulse verzamelt geen gegevens en is geschikt voor alle leeftijden.
+      De app bevat geen leeftijdsbeperkte inhoud.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🔄</i> Wijzigingen in dit beleid</h2>
+    <p>
+      Mochten wij dit privacybeleid wijzigen, dan publiceren wij de nieuwe versie op
+      deze pagina met een bijgewerkte datum. Wij raden u aan dit beleid periodiek te
+      raadplegen. Wijzigingen treden in werking zodra zij op deze pagina zijn gepubliceerd.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">✉️</i> Contact</h2>
+    <p>
+      Heeft u vragen over dit privacybeleid? Neem gerust contact op:
+    </p>
+    <a class="contact-link" href="mailto:jblokzijl@proton.me">
+      ✉️ jblokzijl@proton.me
+    </a>
+  </section>
+
+</div><!-- /.lang-nl -->
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!--  ENGLISH                                                              -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<div class="lang-en">
+
+  <div class="meta">
+    <div class="meta-chip">Version <span>1.0</span></div>
+    <div class="meta-chip">Updated <span>25 March 2025</span></div>
+    <div class="meta-chip">Effective <span>25 March 2025</span></div>
+  </div>
+
+  <section>
+    <h2><i class="ico">📋</i> Overview</h2>
+    <p>
+      GridPulse is an iOS app that displays live day-ahead electricity prices sourced
+      from the <strong>ENTSO-E Transparency Platform</strong>.
+      Your privacy is our priority: GridPulse does <strong>not collect, process, or
+      share any personal data</strong>.
+    </p>
+    <div class="highlight">
+      <strong>Summary:</strong> GridPulse stores nothing about you as a person.
+      Your preferences stay on your own device. There is no account, no tracking,
+      and no communication with third parties beyond the ENTSO-E API.
+    </div>
+  </section>
+
+  <section>
+    <h2><i class="ico">🔒</i> Data we do NOT collect</h2>
+    <p>GridPulse does <strong>not</strong> collect any of the following:</p>
+    <ul class="none">
+      <li>Name, email address, or other identifying information</li>
+      <li>Location data (GPS or IP-based)</li>
+      <li>Device IDs, advertising IDs, or fingerprints</li>
+      <li>Usage statistics, crash reports, or analytics</li>
+      <li>Financial data or payment information</li>
+      <li>Contacts, photos, or other device content</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="ico">📱</i> Local storage</h2>
+    <p>
+      GridPulse stores a small set of <strong>user preferences</strong> exclusively
+      on your device using <code>UserDefaults</code> (shared via an App Group with
+      the widget extension). This data never leaves your device.
+    </p>
+    <ul>
+      <li>Selected country / ENTSO-E bidding zone</li>
+      <li>Display preference (€/kWh or €ct/kWh)</li>
+      <li>All-in price mode and supplier margin</li>
+      <li>Notification threshold and preference</li>
+      <li>Theme preference (dark / light)</li>
+      <li>Cached energy prices for the current day</li>
+    </ul>
+    <p style="margin-top:12px">
+      You can delete all of this data at any time by uninstalling the app.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🌐</i> Network communication</h2>
+    <p>
+      GridPulse exclusively connects to the <strong>ENTSO-E Transparency Platform
+      API</strong> (<code>web-api.tp.entsoe.eu</code>) to retrieve day-ahead
+      electricity prices.
+    </p>
+    <ul>
+      <li>Only energy price data is retrieved — no personal data is sent</li>
+      <li>Requests contain only an API token and the requested time range</li>
+      <li>No cookies, session IDs, or tracking headers are transmitted</li>
+      <li>No communication with advertising or analytics networks</li>
+    </ul>
+    <p style="margin-top:12px">
+      Please consult <a href="https://transparency.entsoe.eu/content/static_content/Static%20content/terms%20and%20conditions/terms%20and%20conditions.html" target="_blank">
+      ENTSO-E's terms and conditions</a> for information about their data policy.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🔔</i> Local notifications</h2>
+    <p>
+      GridPulse can send local push notifications when the energy price drops below
+      your chosen threshold. These notifications are generated <strong>entirely on
+      your device</strong> — no external server is involved.
+      You can disable notifications at any time in the app settings or in the
+      iOS system settings.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🧩</i> Widgets</h2>
+    <p>
+      The WidgetKit extension shares the same local data store (App Group) as the
+      main app. No additional data is collected or transmitted.
+      The widget only reads cached prices and your preferences.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">👶</i> Children</h2>
+    <p>
+      GridPulse collects no data and is appropriate for all ages.
+      The app contains no age-restricted content.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">🔄</i> Changes to this policy</h2>
+    <p>
+      If we update this privacy policy, we will publish the new version on this page
+      with an updated date. We recommend reviewing this policy periodically.
+      Changes take effect as soon as they are published on this page.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="ico">✉️</i> Contact</h2>
+    <p>
+      If you have any questions about this privacy policy, feel free to reach out:
+    </p>
+    <a class="contact-link" href="mailto:jblokzijl@proton.me">
+      ✉️ jblokzijl@proton.me
+    </a>
+  </section>
+
+</div><!-- /.lang-en -->
+</main>
+
+<footer>
+  <p>GridPulse &copy; 2025 &nbsp;·&nbsp;
+     <span class="lang-nl">Privacybeleid versie 1.0 — 25 maart 2025</span>
+     <span class="lang-en">Privacy Policy version 1.0 — 25 March 2025</span>
+  </p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = 'show-' + lang;
+    document.getElementById('btn-nl').classList.toggle('active', lang === 'nl');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('header-subtitle').textContent =
+      lang === 'nl' ? 'Privacybeleid' : 'Privacy Policy';
+    document.documentElement.lang = lang;
+  }
+
+  // Auto-detect browser language
+  const preferred = (navigator.language || 'nl').toLowerCase();
+  if (preferred.startsWith('en')) setLang('en');
+</script>
+
+</body>
+</html>
